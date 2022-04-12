@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: cursive;
+    background-color: black;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 8px 24px;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+header a {
+    color: aliceblue;
+    text-decoration: none;
+    transition: color 0.4s;
+}
+
+header a:hover {
+    color: red;
+}
+
+header ul {
+    list-style: none;
+    font-size: 19px;
+    display: flex;
+    justify-content: space-around;
+}
+
+header ul li+li {
+    margin-left: 20px;
+}
+
+header img {
+    width: 230px;
+    max-width: 230px;
+}
+
+.espada {
+    padding: 24px;
+    height: 450px;
+    width: 100%;
+    display: flex;
+    background-image: url(Imagens/Demon-Slayer-Season-2-O-Quarto-Nerd.jpg);
+    background-size: cover;
+    background-position: 14% 86%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.bolinha span {
+    display: inline-block;
+    background-color: white;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.bolinha span+span {
+    margin-left: 20px;
+}
+
+.inicio {
+    max-width: 80%;
+    margin: 40px auto 0;
+    color: white;
+    flex: 0 1 200px;
+    padding: 0 24px;
+}
+
+.inicio h1 {
+    color: red;
+    font-size: 50px;
+    margin: 30px auto 0;
+}
+
+.inicio p {
+    margin-bottom: 30px;
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+.inicio img {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 1%;
+    width: 100%;
+    max-width: 700px;
+}
+
+.inicio a {
+    color: red;
+    text-decoration: none;
+    transition: color 0.4s;
+    font-size: 16px;
+}
+
+.inicio a:hover {
+    color: aliceblue;
+}
+
+footer p {
+    text-align: center;
+}
+
+@media (max-width:800px){
+    .inicio p{
+        font-size: 15px;
+    }
+    .espada{
+        height: 350px;
+    }
+}
+
+@media (max-width:470px){
+    .inicio p{
+        font-size: 10px;
+    }
+
+    .inicio h1{
+        font-size: 40px;
+    }
+
+    .espada{
+        height: 250px;
+    }
+}

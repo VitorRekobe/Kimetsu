@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: cursive;
+    background-color: black;
+}
+
+header {
+    background-color: black ;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 8px 24px;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+header a{
+    color :aliceblue;
+    text-decoration : none;
+    transition: color 0.4s;
+}
+
+header a:hover{
+    color : red;
+}
+
+header ul{
+    list-style: none;
+    font-size: 19px;
+    display: flex;
+    justify-content: space-around; 
+}
+
+header ul li + li{
+    margin-left: 20px; 
+}
+
+header img{
+  width  :230px;
+  max-width: 230px;
+}
+
+.espadaa{
+    padding: 24px;
+    height: 450px;
+    display: flex;
+
+    background-image: url(Imagens/Demon-Slayer-Season-2-O-Quarto-Nerd.jpg);
+    background-size: cover;
+    background-position:  14% 86%;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.bolinhaa span {
+    display: inline-block;
+    background-color:white;
+    
+    width: 9px;
+    height:9px;
+
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.bolinhaa span + span{
+    margin-left: 20px;
+}
+
+.lutas {
+    max-width: 1200px;
+    margin: 40px auto 0;
+    color: white;
+    flex: 0 1 200px;
+    padding: 0 24px 0 24px;
+}
+
+.t1 {
+    color: red;
+    font-size: 50px;
+}
+.subtitulo {
+    margin-top: 30px;
+}
+.luta1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    max-width: 700px;
+    width: 100%;
+    border-radius: 1%;
+}
+.lutas p{
+    margin-bottom: 30px;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+footer p{
+    text-align: center;
+}
+
+
+@media (max-width:800px){
+    .espadaa{
+        height: 350px;
+    }
+    .luta1 iframe{
+        max-width: 550px;
+        height: 300px;
+    }
+}
+
+@media (max-width:470px){
+    .espadaa{
+        height: 250px;
+    }
+}
+
+@media (max-width:340px){
+    .luta1 iframe{
+        max-width: 250px;
+        height: 200px;
+    }
+}
+

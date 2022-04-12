@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: cursive;
+    background-color: black;
+}
+
+header {
+    background-color: black ;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 8px 24px;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+header a{
+    color :aliceblue;
+    text-decoration : none;
+    transition: color 0.4s;
+}
+
+header a:hover{
+    color : red;
+}
+
+header ul{
+    list-style: none;
+    font-size: 19px;
+    display: flex;
+    justify-content: space-around; 
+}
+
+header ul li + li{
+    margin-left: 20px; 
+}
+
+header img{
+  width  :230px;
+  max-width: 230px;
+}
+
+.nichirin{
+    padding: 24px;
+    height: 450px;
+    display: flex;
+
+    background-image: url(Imagens/Demon-Slayer-Season-2-O-Quarto-Nerd.jpg);
+    background-size: cover;
+    background-position: 14% 86%;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.bola span {
+    display: inline-block;
+    background-color:white;
+    
+    width: 9px;
+    height:9px;
+
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.bola span + span{
+    margin-left: 20px;
+}
+
+.respirar {
+    max-width: 1200px;
+    margin: 40px auto 0;
+    color : white;
+    flex: 0 1 300px;
+    padding: 0 24px;
+}
+.t1{
+    color: red;
+    font-size: 40px;
+}
+
+.respirar img{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    width: 100%;
+    border-radius: 1%;
+    max-width: 700px;  
+}
+
+.respirar p{
+    margin-bottom: 30px;
+    margin-top: 10px;
+    font-size: 18px;
+}
+.respirar a {
+    color :red;
+    text-decoration : none;
+    transition: color 0.4s;
+    font-size: 16px;
+}
+
+.respirar a:hover {
+    color: aliceblue;
+}
+
+footer p{
+    text-align: center;
+}
+
+@media (max-width:800px){
+    .nichirin{
+        height: 350px;
+    }
+}
+
+@media (max-width:470px){
+    .nichirin{
+        height: 250px;
+    }
+}
